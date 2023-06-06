@@ -1,0 +1,36 @@
+{
+    "name": "mrfrost/googleapi",
+    "description": "Google API Service untuk Codeigniter 4",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Mrfrost\\GoogleApi\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "MrFrost-Nv27",
+            "email": "nazruelyourgoodfriend@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "codeigniter4/framework": "^4.0",
+        "codeigniter4/shield": "dev-develop",
+        "codeigniter4/translations": "^4.3",
+        "google/apiclient": "^2.12.1",
+        "phpmailer/phpmailer": "^6.8"
+    },
+    "extra": {
+        "google/apiclient-services": [
+            "Drive",
+            "Gmail",
+            "Oauth2",
+            "YouTube"
+        ]
+    },
+    "scripts": {
+        "pre-autoload-dump": "Google\\Task\\Composer::cleanup"
+    }
+}
